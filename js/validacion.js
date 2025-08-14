@@ -21,5 +21,6 @@ function terminosNoValidados () {
     return !terminos.checked;
 }
 
-
-    
+function contrasenasDiferentes() {
+    return password1 !== password2;
+}
