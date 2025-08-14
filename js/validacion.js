@@ -6,14 +6,9 @@ function showAlertError() {
     document.getElementById("alert-danger").classList.add("show");
 }
 
-document.getElementById("regBtn").addEventListener("click", function () {
+function contrasenasDiferentes() {
     let password1 = document.getElementById("password1").value;
     let password2 = document.getElementById("password2").value;
 
-    if (password1 !== password2) {
-        showAlertError();
-        return;
-    }
-    
-
-})
+    return password1 !== password2;
+}
