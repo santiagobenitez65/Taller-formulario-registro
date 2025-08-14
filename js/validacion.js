@@ -24,3 +24,17 @@ function terminosNoValidados () {
 function contrasenasDiferentes() {
     return password1 !== password2;
 }
+function validarPassword(){
+    const password1 = document.getElementById("password1").value;
+    
+    document.getElementById("alert-success").classList.remove("show");
+    document.getElementById("alert-danger").classList.remove("show");
+
+
+    if (password1.length < 6) {
+        showAlertError();
+    } else {
+        showAlertSuccess();
+    }
+}
+
